@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Learning Path Planner</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<h1 class="title">Learning Path Planner</h1>
+
+<div class="container">
+
+    <!-- LOGIN CARD -->
+    <div class="card" id="loginCard">
+        <h2>Login</h2>
+
+        <input type="email" id="loginEmail" placeholder="Email">
+        <input type="password" id="loginPassword" placeholder="Password">
+
+        <button onclick="login()">Login</button>
+
+        <p>
+            Don’t have an account?
+            <span onclick="showRegister()">Create one</span>
+        </p>
+    </div>
+
+    <!-- REGISTER CARD -->
+    <div class="card hidden" id="registerCard">
+        <h2>Register</h2>
+
+        <input type="text" id="regName" placeholder="Name">
+        <input type="email" id="regEmail" placeholder="Email">
+        <input type="password" id="regPassword" placeholder="Password">
+
+        <button onclick="register()">Register</button>
+
+        <p>
+            Already have an account?
+            <span onclick="showLogin()">Login</span>
+        </p>
+    </div>
+
+</div>
+
+<script src="js/auth.js"></script>
+</body>
+</html>
